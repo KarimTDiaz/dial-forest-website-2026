@@ -3,8 +3,10 @@ import { NavLink, Outlet } from 'react-router'
 import logo from '../assets/logo.svg'
 
 const NAV_LINKS = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
+    { to: '/about', label: 'ABOUT' },
+    { to: '/artists', label: 'ARTISTS' },
+    { to: '/transport', label: 'TRANSPORT' },
+    { to: '/accommodation', label: 'ACCOMMODATION' },
 ]
 
 export const Layout = () => {
@@ -42,7 +44,7 @@ export const Layout = () => {
                             to={to}
                             className={({ isActive }) =>
                                 `rounded-lg px-4 py-3.5 text-lg font-medium no-underline transition-colors duration-200 md:rounded-md md:px-4 md:py-2 md:text-[15px] ${isActive
-                                    ? 'bg-accent-bg text-accent'
+                                    ? 'underline'
                                     : 'text-text hover:bg-accent-bg hover:text-text-heading'
                                 }`
                             }
@@ -58,9 +60,9 @@ export const Layout = () => {
                 <Outlet />
             </main>
 
-            <footer className="border-t border-border px-5 py-5 text-center text-[13px] text-text md:px-8 md:py-6">
+            {/*      <footer className="border-t border-border px-5 py-5 text-center text-[13px] text-text md:px-8 md:py-6">
                 <p>&copy; {new Date().getFullYear()} Dial Forest. All rights reserved.</p>
-            </footer>
+            </footer> */}
         </div>
     )
 }
