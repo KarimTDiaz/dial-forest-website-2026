@@ -1,14 +1,20 @@
+import colectivaHeading from '../../assets/colectiva.png';
+import djHeading from '../../assets/dj.png';
+import liveHeading from '../../assets/live.png';
+
 /** Full line-up copy from the festival poster (one string per printed line). */
 export type LineupSection = {
   id: string;
-  title: string;
+  headingSrc: string;
+  headingAlt: string;
   lines: string[];
 };
 
 export const LINEUP_SECTIONS: LineupSection[] = [
   {
     id: 'dj',
-    title: 'DJ',
+    headingSrc: djHeading,
+    headingAlt: 'DJ',
     lines: [
       'ARCANOID / ARISTA / AMIGA B2B FRAU TROFFEA / ANA PACHECO / ANGELA GRIEF',
       'ALDOSAN / BALDMAN B2B AXIS MUNDI / BALHEIM & LA INDO / BIBI /',
@@ -25,7 +31,8 @@ export const LINEUP_SECTIONS: LineupSection[] = [
   },
   {
     id: 'live',
-    title: 'LIVE',
+    headingSrc: liveHeading,
+    headingAlt: 'Live',
     lines: [
       'AQUATRAXX / PARAUTAS / INTERCOM82 / EL MUELLE 1931 SHOP / PERSA /',
       'PROTOCOLO SYSEX / MOUNQUP / FOTOCOPIA / NORTH PATROL & DOJO SOUNDSYSTEM',
@@ -33,7 +40,8 @@ export const LINEUP_SECTIONS: LineupSection[] = [
   },
   {
     id: 'actividade',
-    title: 'ACTIVIDADE COLECTIVA',
+    headingSrc: colectivaHeading,
+    headingAlt: 'Actividade colectiva',
     lines: [
       'COLECTIVO MOM / FILME CLUBE BY DIAL ASOC / DEPORTES LOPEZ /',
       'EL MUELLE 1931 POP-UP / YOGA w/ MAY BAKER & PURA VIDA',
