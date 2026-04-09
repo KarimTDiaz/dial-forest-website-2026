@@ -1,9 +1,9 @@
 export const Home = () => {
     return (
-        <div className="relative flex flex-1 flex-col items-center justify-center p-5 md:p-8">
+        <div className="relative flex min-h-0 flex-1 flex-col items-center justify-center overflow-hidden p-5 md:p-8">
 
             <div className="relative inline-block">
-                <h1 className="relative z-10 text-5xl font-medium tracking-tight text-text-heading md:text-[10vw]">
+                <h1 className="relative z-10 text-9xl font-medium tracking-tight text-text-heading md:text-[10vw]">
                     DI
                     <span className="letter-drop inline-block">
                         <span className="letter-swing inline-block origin-top">A</span>

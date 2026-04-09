@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
 @import 'tailwindcss';
 
 @font-face {
@@ -45,6 +46,25 @@
     body.has-custom-cursor * {
       cursor: none !important;
     }
+  }
+}
+
+/* YDGothic lacks full Latin-1 / extended glyphs; use system fonts for accented copy. */
+@layer utilities {
+  .font-latin-extended {
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      sans-serif;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
   }
 }
 
